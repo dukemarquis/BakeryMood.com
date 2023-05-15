@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CheesecakeMia.com</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'recommend/stylesheet.css' %}">
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+        
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                  font-size: 3.5rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                {% comment %} <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> {% endcomment %}
+                <span class="fs-4">Cheesecake Mia</span>
+              </a>
+        
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Main</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">All List</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Upload</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+              </ul>
+            </header>
+        </div>
+
+        <div class="container">
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">We love Cheesecake! <span class="text-body-secondary">But the choice around is limited.</span></h2>
+                <p class="lead mt-5">It would be best to have other people recommend the best Cheesecake they ever ate before!</p>
+                </div>
+                <div class="col-md-5">
+                    {% comment %} <img width="500" src="{% static 'recommend/images/Main-Banner-2.jpg' %}"> {% endcomment %}
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        {% comment %} <img width="500" src="{% static 'recommend/images/Main-Banner-1.jpg' %}"> {% endcomment %}
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/>
+                        <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+                    </svg>
+                </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" async defer></script>
+    </body>
+</html>
